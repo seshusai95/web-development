@@ -1,0 +1,116 @@
+body {
+    font: normal 50px Times New Roman;
+    text-align: center;
+
+}
+.board{
+    width: 500px;
+    height:600px;
+    margin-left: 420px;
+    margin-top: 80px;
+}
+
+.sb2{
+    float: right;
+    margin-top: 173px;
+    margin-right: 210px;
+}
+
+#scoreboard1 .score1 {
+    text-align: center;
+    font-size: 60px
+}
+
+#scoreboard2 .score2 {
+    text-align: center;
+    font-size: 60px
+}
+
+#scoreboard1 .score1#player1 {
+    color: #ED676B;
+}
+
+#scoreboard2 .score2#player2 {
+    color: #23916B;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 305px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover span {
+    padding-right: 25px;
+}
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#tic-tac-toe {
+    cell-spacing: 20px;
+    border-spacing: 0px;
+    border-collapse: separate;
+    margin: 30px auto;
+}
+
+#tic-tac-toe td {
+    border: 2px solid #000;
+    height: 130px;
+    width: 130px;
+    text-align: center;
+    font: bold 80px comic sans ms;
+}
+
+#tic-tac-toe tr:first-child td {
+    border-top: none;
+}
+
+#tic-tac-toe tr:last-child td {
+    border-bottom: none;
+}
+
+#tic-tac-toe tr td:first-child {
+    border-left: none;
+}
+
+#tic-tac-toe tr td:last-child {
+    border-right: none;
+}
+
+#tic-tac-toe td.X {
+    color: #ED676B;
+}
+
+#tic-tac-toe td.O {
+    color: #23916B;
+}
+
+.sb1{
+    float:left;
+    margin-left :210px;
+    margin-top: 180px;
+}
+

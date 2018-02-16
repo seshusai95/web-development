@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <link rel="stylesheet" href="exam1.css">
+    <script src="exam1.js"></script>
+
+</head>
+<body>
+
+<div ng-app="app" ng-controller="TicTacToeCtrl">
+<div class="sb1">
+    <table id="scoreboard1" align="center">
+        <tr>
+            <td> Player 1</td>
+
+        </tr>
+        <tr>
+            <td class="score1" id="player1">
+                {{game.scores.X}}
+            </td>
+
+        </tr>
+    </table>
+</div>
+<div class="sb2">
+    <table id="scoreboard2" align="center">
+        <tr>
+            <td> Player 2 </td>
+        </tr>
+        <tr>
+            <td class="score2" id="player2">
+                {{game.scores.O}}
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="board">
+    <table align="center" id="tic-tac-toe">
+        <tr ng-repeat="(row_index, row) in game.dummyArray track by $index">
+            <td ng-repeat="(column_index, column) in game.dummyArray track by $index"
+                ng-click="game.mark(row_index, column_index)"
+                class="{{game.data[row_index+''+column_index]}}">
+                {{game.data[row_index+''+column_index]}}
+            </td>
+        </tr>
+    </table>
+
+    <button class="button" ng-click="game.init()"><span>Reset</span></button>
+
+</div>
+</div>
+
+</body>
+</html>
