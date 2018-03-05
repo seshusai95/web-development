@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Youtube Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="youtube.css">
+
+</head>
+<body style="background:#f39c12;">
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12" >
+                <div class="jumbotron jumbotron-fluid" id="jumbo">
+                    <h1 id="heading">YOUTUBE SEARCH</h1>
+                    <p style="font-size: 17px;font-family:'Century';">
+                        Type The Phrase You Want
+                        <br />
+                        And Hit Search To Search For Videos On Youtube
+                    </p>
+                </div>
+                <br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <form action="#">
+                    <p><input type="text" id="search" placeholder="Type something..." autocomplete="off" class="form-control" /></p>
+                    <p><input type="submit" value="Search" class="form-control btn btn-primary w100"></p>
+                </form>
+                <div id="results"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="youtube.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=init"></script>
+
+</body>
+</html>
