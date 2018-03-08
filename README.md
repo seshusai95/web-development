@@ -1,6 +1,9 @@
 # web-development
 this repository is created for web development
 
+In Class Programming 7
+https://github.com/seshusai95/web-development/wiki/ICP_7
+
 Assignment 1 wiki:
 https://github.com/seshusai95/web-development/wiki/Assignment-1
 
