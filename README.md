@@ -15,3 +15,6 @@ https://github.com/seshusai95/web-development/wiki/Assignment-3
 
 Assignment 4 wiki
 https://github.com/seshusai95/web-development/wiki/Asiisgnment-4
+
+Mobile_lab_2
+https://github.com/seshusai95/web-development/wiki/Android_lab_assig_2
