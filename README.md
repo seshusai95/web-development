@@ -18,3 +18,6 @@ https://github.com/seshusai95/web-development/wiki/Asiisgnment-4
 
 Mobile_lab_2
 https://github.com/seshusai95/web-development/wiki/Android_lab_assig_2
+
+Mobile_lab_7
+https://github.com/seshusai95/web-development/wiki/Web-lab-7
